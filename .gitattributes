@@ -1,1 +1,21 @@
+# Use Git LFS for sketch files in the Sketches directory
 Sketches/** filter=lfs diff=lfs merge=lfs -text
+
+# Use Git LFS for Processing .pde files
+*.pde filter=lfs diff=lfs merge=lfs -text
+
+# Use Git LFS for common large binary file types
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+*.svg filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Treat markdown files as text
+*.md text
+
