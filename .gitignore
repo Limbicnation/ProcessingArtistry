@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.jpg
 
 # BlueJ files
 *.ctxt
@@ -21,3 +22,5 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+Sketches/ParticleFlow_250221/ParticleDance_*.jpg
+Sketches/ParticleFlow_250221/ParticleDance_*.jpg
