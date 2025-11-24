@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14b6636858732a82a5c7321513fe72ba7d7d7fe90d1385f04c265b4b62baa28a
-size 660
+float sunX, sunY;
+float angle = 0;
+float declination;
+
+void setup() {
+  size(800, 800);
+  background(0);
+}
+
+void draw() {
+  background(0);
+  
+  // Calculate sun's position based on angle
+  declination = sin(radians(angle)) * 23.44; // Earth's axial tilt
+  sunX = width/2 + cos(radians(angle)) * 200 * cos(radians(declination));
+  sunY = height/2 + sin(radians(angle)) * 200 * cos(radians(declination));
+  
+  // Draw the sun
+  fill(255, 255, 0);
+  ellipse(sunX, sunY, 20, 20);
+  
+  // Draw the analemma path (optional)
+  stroke(255);
+  noFill();
+  ellipse(width/2, height/2, 400, 400);
+  
+  // Increment the angle
+  angle += 0.1;
+}

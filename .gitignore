@@ -24,3 +24,10 @@
 hs_err_pid*
 Sketches/ParticleFlow_250221/ParticleDance_*.jpg
 Sketches/ParticleFlow_250221/ParticleDance_*.jpg
+
+# Processing Sketch Outputs
+output/
+frames/
+
+# Installed Modes (should not be version controlled in user sketches)
+Sketches/modes/
